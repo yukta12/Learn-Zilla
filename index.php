@@ -47,7 +47,8 @@
                             <div class="header-bar-menu">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
                                     <li><a href="#">Register </a></li>
-                                    <li><a href="#"> Login</a></li>
+                                   
+                                    <li><a href="login.php"> Login</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
                         </div><!-- .col -->
@@ -70,7 +71,8 @@
                                     <li class="current-menu-item"><a href="index.php">Home</a></li>
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#">Courses</a></li>
-                    
+                                    
+                                    
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
 
@@ -82,7 +84,7 @@
                                 </div><!-- .hamburger-menu -->
 
                                 
-                            </nav><!-- .site-navigation -->
+                                </nav><!-- .site-navigation -->
                         </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .container -->
