@@ -40,12 +40,8 @@
             <form action="../includes/process-student-login.php" method="post">
                 <div class="form-group">
                     <div class="form-label-group">
-                      
-                        <input type="text" id="email" class="form-control" required="required" autofocus="autofocus" name="email" placeholder="Enter username">
-                        
-                        
-                        
-                    </div>
+                      <input type="text" id="email" class="form-control" required="required" autofocus="autofocus" name="email" placeholder="Enter username">
+                      </div>
                 </div>
                 <div class="form-group">
                     <div class="form-label-group">

@@ -1,14 +1,4 @@
-<?php
-if(!isset($_SESSION['user_id'])) {
-    session_start();
-}
-$user_id = $_SESSION['user_id'];
-include_once ("../includes/functions.php");
-$result = getAllUsers("user_id = {$user_id}");
-if($row = mysqli_fetch_assoc($result)){
-    $image = $row['image'];
-}
-?>
+
 
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -33,7 +23,7 @@ if($row = mysqli_fetch_assoc($result)){
     <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-            <img src="images/users/<?php echo $image;?>" alt="" class="rounded-circle" width="30px" height="30px">
+            <img src="" alt="" class="rounded-circle fa fa-2x fa-user" width="30px" height="30px" >
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
             <a class="dropdown-item" href="#">Profile</a>
