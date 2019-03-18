@@ -16,7 +16,7 @@ if(isset($_POST['login'])){
     while ($row = mysqli_fetch_assoc($rs)){
         $user_id = $row['user_id'];
         $db_password = $row['password'];
-        
+        $email = $row['email'];
     }
     if($password == $db_password){
         
@@ -24,7 +24,9 @@ if(isset($_POST['login'])){
             session_start();
         }
         $_SESSION['user_id'] = $user_id;
-       
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+    //die($_SESSION['email']);
         header("Location: ../admin/admin-index.php");
     }else{
         echo "login unsuccesfull";

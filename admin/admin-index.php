@@ -8,10 +8,10 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<?php
+    <?php
 include_once ("includes/header.php");
 if($user_id == null){
     include_once ("includes/no-access.php");
@@ -20,103 +20,93 @@ if($user_id == null){
     ?>
 
 
-    <body id="page-top" class="sidebar-toggled">
+        <body id="page-top" class="sidebar-toggled">
 
 
-    <!-- Navbar -->
-    <?php
+            <!-- Navbar -->
+            <?php
     include_once("includes/navigation.php");
     ?>
 
-    <div id="wrapper">
+                <div id="wrapper">
 
-        <!-- Sidebar -->
-       <ul class="sidebar navbar-nav toggled">
-    <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+                    <!-- Sidebar -->
+                    <ul class="sidebar navbar-nav toggled">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Posts</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="posts.php">View all posts</a>
-            <a class="dropdown-item" href="posts.php?source=add_post">Add post</a>
-
-        </div>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="categories.php">
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link" href="operating-system.php">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Operating System</span>
+                            </a>
+                          
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.php">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Categories</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="comments.php">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Comments</span></a>
-    </li>
-   
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="users.php" id="pagesDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Users</span>
+            <span>Anaylsis of alogrithms</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comments.php">
+            <i class="fas fa-fw fa-wifi"></i>
+            <span>Data networks</span></a>
+                        </li>
+
+                        <li class="nav-item ">
+                          <a class="nav-link" href="categories.php">
+                        <i class="fas fa-fw fa-database"></i>
+                        <span>DataBase</span>
                     </a>
+                        </li>
 
-                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <a class="dropdown-item" href="users.php">View all user</a>
-                        <a class="dropdown-item" href="">Add User</a>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-th-list"></i>
+            <span>Software Engineering &amp; Testing</span></a>
+                        </li>
+                    </ul>
 
-                    </div>
-                </li>
-               
-    ?>
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Profile</span></a>
-    </li>
-</ul>
+                    <div id="content-wrapper">
 
-        <div id="content-wrapper">
+                        <div class="container-fluid">
 
-            <div class="container-fluid">
+                            <!-- Breadcrumbs-->
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">LearnZilla Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    <?php echo $page_title; ?>
+                                </li>
+                            </ol>
 
-                <!-- Breadcrumbs-->
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">LearnZilla Dashboard</a>
-                    </li>
-                    <li class="breadcrumb-item active"><?php echo $page_title; ?></li>
-                </ol>
+                            <!-- Icon Cards-->
+                        </div>
+                        <!-- /.container-fluid -->
 
-                <!-- Icon Cards-->
-            </div>
-            <!-- /.container-fluid -->
-
-            <?php
+                        <?php
             include_once("includes/footer.php");
             ?>
 
-        </div>
-        <!-- /.content-wrapper -->
+                    </div>
+                    <!-- /.content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+                </div>
+                <!-- /#wrapper -->
 
-    <?php
+                <?php
     include_once("includes/scripts_btn_to_top.php");
     ?>
 
 
-    </body>
-    <?php
+        </body>
+        <?php
 }
 ?>
 
-</html>
+    </html>

@@ -15,9 +15,9 @@ function getAllComments($condition =1){
 }
 
 
-function getAllPosts($condition =1){
+function getAllQuestions($table_name,$condition =1){
     global $connection;
-    $sql = "SELECT posts.*,CONCAT(users.first_name , CONCAT(\" \",users.last_name)) as author FROM posts , users WHERE posts.post_author = users.user_id AND ($condition)";
+    $sql = "SELECT * from $table_name WHERE ($condition)";
     $result = mysqli_query($connection, $sql);
     return $result;
 }
