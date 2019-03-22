@@ -25,7 +25,7 @@ if(isset($_POST['login'])){
         }
         $_SESSION['user_id'] = $user_id;
        
-        header("Location: ../admin/index.php");
+        header("Location: ../student/index.php");
     }else{
         echo "login unsuccesfull";
     }

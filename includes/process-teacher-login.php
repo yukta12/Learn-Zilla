@@ -27,7 +27,7 @@ if(isset($_POST['login'])){
         $_SESSION['username'] = $username;
         $_SESSION['email'] = $email;
     //die($_SESSION['email']);
-        header("Location: ../admin/admin-index.php");
+        header("Location: ../admin/index.php");
     }else{
         echo "login unsuccesfull";
     }

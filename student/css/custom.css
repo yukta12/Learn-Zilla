@@ -1,0 +1,17 @@
+.question-container{
+    border: solid 1px #aaa;
+    padding: 3%;
+    border-radius: 10px;
+   
+}
+.question{
+ font-size: 24px;
+    font-weight: bold;
+}
+.answer{
+    padding: 1%;
+}
+.answer .fa{
+    font-size: 24px;
+    color: #fc3;
+}

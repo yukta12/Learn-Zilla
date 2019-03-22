@@ -37,7 +37,7 @@
                 <h4>login </h4>
                 <p>Enter your username and password</p>
             </div>
-            <form action="../includes/process-student-login.php" method="post">
+            <form action="includes/process-student-login.php" method="post">
                 <div class="form-group">
                     <div class="form-label-group">
                       <input type="text" id="email" class="form-control" required="required" autofocus="autofocus" name="email" placeholder="Enter username">
