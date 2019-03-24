@@ -38,4 +38,10 @@ localhost/learnzilla/
 - [Xampp](https://www.apachefriends.org/download.html)
 - Any editor
 
+## images
+<img src="https://github.com/yukta12/Learn-Zilla/blob/master/images/home.png" width="200">
+<img src="https://github.com/yukta12/Learn-Zilla/blob/master/images/login.png" width="200">
+<img src="https://github.com/yukta12/Learn-Zilla/blob/master/images/os.png" width="200">
+<img src="https://github.com/yukta12/Learn-Zilla/blob/master/images/teacher.png" width="200">
+<img src="https://github.com/yukta12/Learn-Zilla/blob/master/images/postquestion.png" width="200">
 
