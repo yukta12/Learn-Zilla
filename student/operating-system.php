@@ -48,35 +48,59 @@ if($user_id == null){
                 </ol>
 
                 <!-- Icon Cards-->
-     
-               
-                    <div class="row">
+         <?php
+             include_once ("../includes/functions.php");
+                $resultset = getAllQuestions("operating_system");
+                while($row = mysqli_fetch_assoc($resultset)){
+                    $question_id = $row['question_id'];
+                    $question = $row['question'];
+                    $option_a = $row['option_a'];
+                    $option_b = $row['option_b'];
+                    $option_c = $row['option_c'];
+                    $option_d = $row['option_d'];
+                    $correct_answer = $row['correct_answer'];
+                    $explanation = $row['explanation'];
+                    $posted_by = $row['posted_by'];
+
+
+                    echo<<<QUESTION
+<div class="row">
                         <div class="col-md-12">
                           <div class="question-container">
                                <div class="row">
                            <div class="col-md-1 question">Q.</div>
                            <div class="col-md-11 ">
-                            <p class="question">What is operating system?</p>
+                            <div class="row">
+                                <div class="col-md-9"><p class="question">$question</p></div>
+                                <div class="col-md-3 teacher">posted by : $posted_by</div>
+                            </div>
                               <div class="row">
                                   <div class="col-md-6 answer">
-                                      a. collection of programs that manages hardware resources
+                                      <strong> a. </strong>$option_a
                                   </div>
                                   <div class="col-md-6 answer">
-                                      b. collection of programs that manages hardware resources
+                                     <strong> b. </strong>$option_b
                                   </div>
                               </div>
                               <div class="row">
                                   <div class="col-md-6 answer">
-                                      c. collection of programs that manages hardware resources
-                                  </div>
+                                      <strong> c. </strong>$option_c
+                                      </div>
                                   <div class="col-md-6 answer">
-                                      d. collection of programs that manages hardware resources
+                                      <strong> d. </strong>$option_d
                                   </div>
                               </div>
                                <div class="row">
-                                   <div class="col-md-12 answer">
+                                   <div class="col-md-12 answer show_answer">
                                        <i class="fa fa-lightbulb"></i>
                                    </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-md-12 showanswer">
+                                       <div>
+                                           <strong>Correct ans:  </strong> $correct_answer
+                                       </div>
+                                       <div><strong>Explanation :</strong> $explanation </div></div>
                                </div>
                            </div>
                             </div>
@@ -84,6 +108,14 @@ if($user_id == null){
                         </div>
                     </div>
                
+
+
+QUESTION;
+                 }
+    
+    ?>
+               
+                 
             
 
             </div>
@@ -102,7 +134,7 @@ if($user_id == null){
     <?php
     include_once("includes/scripts_btn_to_top.php");
     ?>
-
+<script src="js/customjs.js"></script>
 
     </body>
     <?php
